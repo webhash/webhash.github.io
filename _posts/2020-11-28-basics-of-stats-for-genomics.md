@@ -43,9 +43,17 @@ tags: [basics, statistics, genomics]
 
 - Null: $$ \beta_{42} $$ = 0 
 
-- Alt theory is not $$ \beta_{42}  \ne 0 $$, but ...
+- Alt theory is not $$ \beta_{42} \ne 0 $$, but ...
 
-- Alt : SNP 42 is perfect LD with another SNP with non-zero effect 
+- Alt : SNP 42 is perfect LD with another SNP with non-zero effect , Or 
+
+- Alt : SNP 42 correlates/tags population structure or confounding that we are don't know about
+
+**Significance Threshold**
+
+- If the significance threashold for rejecting the null hypothesis is 0.05, it means we have 1/20 chance that we reject the null hypothesis incorrectly, on each test that we do. 
+
+- 
 
 
 [1] created while following https://www.youtube.com/playlist?list=PLvdBkUzU6hPL1oZnsVW4hURGiIjfOLqzq
