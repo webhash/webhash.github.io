@@ -1,6 +1,6 @@
 ---
 layout: page
-title: A place to document useful and useless thing!!!
+title: Some Notes!!!
 ---
 ## About
 
