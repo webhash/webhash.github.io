@@ -34,3 +34,10 @@ title: Basics of statistic for genomics
 
 - $$ Y = X \beta $$ , where Y represent the phenotype and X represent the bunch of genetics, and $$ \beta $$ represent affect size. $$ \beta $$ will follow normal distribution 
 
+***Alternate Hypothesis ***
+
+- ![Normal Distribution and P-Values](https://webhash.github.io/img/ndist_pvalue.png "Normal Distribution and P-values")
+
+- $$ Y = X_{42} \beta_{42} $$ , where $$ X_{42} $$ is an alternate allele or SNP42, $$ \beta_{42} $$ is the effect of alternate allele at SNP42 
+
+
