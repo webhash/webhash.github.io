@@ -41,6 +41,11 @@ tags: [basics, statistics, genomics]
 
 - $$ Y = X_{42} \beta_{42} $$ , where $$ X_{42} $$ is an alternate allele or SNP42, $$ \beta_{42} $$ is the effect of alternate allele at SNP42 
 
+- Null: $$ \beta_{42} $$ = 0 
+
+- Alt theory is not $$ \beta_{42}  \ne 0 $$, but ...
+
+- Alt : SNP 42 is perfect LD with another SNP with non-zero effect 
 
 
 [1] created while following https://www.youtube.com/playlist?list=PLvdBkUzU6hPL1oZnsVW4hURGiIjfOLqzq
