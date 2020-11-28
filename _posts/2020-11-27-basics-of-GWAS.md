@@ -1,5 +1,6 @@
 ---
-title: Understaning GWAS 
+title: Understaning GWAS
+tags : [GWAS, genomics, basics]
 ---
 
 
