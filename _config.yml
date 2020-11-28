@@ -4,7 +4,7 @@ description: "Blog site with support for Latex!!!"
 url: "https://webhash.github.io/"
 author:
   name: "webhash"
-  url: "https://webhash.github.io/"
+  url: "https://github.com/webhash/"
 
 # Build settings
 baseurl: https://webhash.github.io/
