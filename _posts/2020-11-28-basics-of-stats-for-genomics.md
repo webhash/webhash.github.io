@@ -28,6 +28,9 @@ title: Basics of statistic for genomics
 
 - Normal distribution is the most used Null distribution
 
+![Normal Distribution](https://webhash.github.io/img/Manhattan_Plot.png "Normal Distribution")
 
+- X-axis represent the values that will be generated from the distribution and Y-axis represent the probability of generating that value 
 
+- $$ Y = X \beta $$ , where Y represent the phenotype and X represent the bunch of genetics, and $$ \beta $$ represent affect size. $$ \beta $$ will follow normal distribution 
 
