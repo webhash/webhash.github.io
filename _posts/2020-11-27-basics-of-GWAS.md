@@ -87,11 +87,11 @@ $$
 
 - We can write the GWAS equation for $$i^{th} $$ SNP on the $$ j^{th} $$ individual 
 
-$$ y_j = \beta_i g_{ij} + /epsilon_j $$
+$$ y_j = \beta_i g_{ij} + \epsilon_j $$
 
 - In real world we have to consider many other factors, below is the real world translation of above simplified equation 
 
-$$ y_i = \beta_{sex}S_j + \beta_{age}A_j + \beta_{PC1}PC_{1j} + \beta_{PC2}PC_{2j} + \beta_ig_{ij} + /epsilon_j  $$
+$$ y_i = \beta_{sex}S_j + \beta_{age}A_j + \beta_{PC1}PC_{1j} + \beta_{PC2}PC_{2j} + \beta_ig_{ij} + \epsilon_j  $$
 
 - In the above real world equation we have considered other covariants like sex, age and principal components. 
 
@@ -101,5 +101,21 @@ $$ y_i = \beta_{sex}S_j + \beta_{age}A_j + \beta_{PC1}PC_{1j} + \beta_{PC2}PC_{2
 
 - $$\beta_i$$ is the true effect which we would never know 
 
-- $$ \widehat {\beta_i} $$ is the estimated effect 
+- $$ \hat {\beta_i} $$ is the estimated effect 
 
+### GWAS, p-value and Manhattan plot 
+
+- We use the Marginal model $$ y_j = \beta_i g_{ij} + /epsilon_j $$ to get the estimated effect $$ \hat {\beta_i} $$ and p-values
+
+- We use manhattan plot to plot the p-values and different variants in the different section of genome 
+
+![Manhattan](https://webhash.github.io/img/Manhattan_Plot.png "Manhattan Plot")
+
+- In above plot one can see that on X-axis we have marked different chromosomes, each dot represent the different variant that were tested during the GWAS
+
+- Y-axis plots the $$-log_10(p-value)$$, smaller the value the higher the $$-log_10(p-value)$$ value and more the chance that null-hypothesis is invalid.
+
+- Null hypothesis shall be in our context that the variation in genotype has no estimated effect.
+
+
+ 
