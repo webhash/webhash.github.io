@@ -100,5 +100,4 @@ title: Understaning Genome
 - Easy way is to use computers and apply algorithms to detect the correct phase 
 
 
-###### created while following https://www.youtube.com/playlist?list=PLvdBkUzU6hPKtIGqdkcX8qgN1U8nH21j9
-###### All material references from above 
+[1] created while following https://www.youtube.com/playlist?list=PLvdBkUzU6hPKtIGqdkcX8qgN1U8nH21j9
