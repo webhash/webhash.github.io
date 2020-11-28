@@ -117,7 +117,7 @@ $$ y_i = \beta_{sex}S_j + \beta_{age}A_j + \beta_{PC1}PC_{1j} + \beta_{PC2}PC_{2
 
 - Null hypothesis shall be in our context that the variation in genotype has no estimated effect.
 
-## GWAS, p-value, FWER and Manhattan plot 
+### GWAS, p-value, FWER and Manhattan plot 
 
 - Normally in statistic we use p-value as 0.05 , which $$-log_{10}$$(0.5) = 1.3 
 
