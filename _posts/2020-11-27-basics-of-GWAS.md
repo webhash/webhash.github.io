@@ -50,8 +50,8 @@ Things that are inside of us and might not be visible but are determined by the 
 
 - In a full model of linear regression model we have $$ Y = G\beta + \epsilon $$, where G represent all the genetic variation seen and we want to calculate the $$ \beta $$ 
 - But it is hard to determine in one go use all the variation G and determine the $$ \beta $$, in statistic we say would say we dont have enough power to fit this model
-- So what we do in GWAS is we try to fit a marginal model i.e. $$ \[Y = G_i\beta_i + e] \ $$
-- we are trying to find what impact $$\[i^th]\$$ variation/SNP in the genome  
+- So what we do in GWAS is we try to fit a marginal model i.e. $$ Y = G_i\beta_i + e \ $$
+- we are trying to find what impact does $$i\textsuperscript{th} $$ variation/SNP in the genome makes
 
 
 
