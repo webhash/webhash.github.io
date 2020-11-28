@@ -1,5 +1,5 @@
 # Site settings
-title: Notes from the underground !!!
+title: "Understanding things one note at a time"
 description: "Blog site with support for Latex!!!"
 url: "https://webhash.github.io/"
 author:
@@ -27,9 +27,6 @@ defaults:
 genre: "Notes" # Blog genre
 version: "0.0.1"    # Blog site version
 
-# Disqus comments
-comments: true      # used to enable disqus comments on site
-dsq_shortname: simple notes # disqus shortname
 
 # Options: Define which header/footer to use
 custom_header: false
