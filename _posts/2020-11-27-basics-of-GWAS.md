@@ -63,7 +63,9 @@ $$
 
 - But it is hard to determine in one go use all the variation G and determine the $$ \beta $$, in statistic we say would say we dont have enough power to fit this model
 - So what we do in GWAS is we try to fit a marginal model i.e. $$ Y = G_i\beta_i + e $$
-- we are trying to find what impact does $$i^{th} $$ variation/SNP in the genome has
+$$ \begin{bmatrix} y_{1} \ y_{2} \ \dots \ y_{N} \end{bmatrix} = 
+\begin{bmatrix} g_{1i} & g_{2i} & g_{3i} & \dots & g_{Ni}  \end{bmatrix} \beta_i +\begin{bmatrix} \epsilon_1 \ \epsilon_2 \ \dots \ \epsilon_N \end{bmatrix} $$
+- we are trying to find what impact does $$i^{th} $$ variation/SNP in the genome has rather than all the variations.
 
 
 
