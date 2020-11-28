@@ -1,5 +1,6 @@
 ---
 title: Understaning Genome 
+tags: [basics, Genome]
 ---
 
 ## Basics of Genome
