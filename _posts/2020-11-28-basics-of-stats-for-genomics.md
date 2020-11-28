@@ -53,7 +53,9 @@ tags: [basics, statistics, genomics]
 
 - If the significance threashold for rejecting the null hypothesis is 0.05, it means we have 1/20 chance that we reject the null hypothesis incorrectly, on each test that we do. 
 
-- 
+- So if we do 100 test , all of which are truly under null , we can expect 5 false positives 
+
+
 
 
 [1] created while following https://www.youtube.com/playlist?list=PLvdBkUzU6hPL1oZnsVW4hURGiIjfOLqzq
