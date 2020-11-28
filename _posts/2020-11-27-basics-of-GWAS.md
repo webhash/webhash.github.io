@@ -113,7 +113,7 @@ $$ y_i = \beta_{sex}S_j + \beta_{age}A_j + \beta_{PC1}PC_{1j} + \beta_{PC2}PC_{2
 
 - In above plot one can see that on X-axis we have marked different chromosomes, each dot represent the different variant that were tested during the GWAS
 
-- Y-axis plots the $$-log_10(p-value)$$, smaller the value the higher the $$-log_10(p-value)$$ value and more the chance that null-hypothesis is invalid.
+- Y-axis plots the $$-log_{10}$$(p-value), smaller the value the higher the $$-log_{10}$$(p-value) value and more the chance that null-hypothesis is invalid.
 
 - Null hypothesis shall be in our context that the variation in genotype has no estimated effect.
 
