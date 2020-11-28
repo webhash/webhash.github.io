@@ -75,8 +75,12 @@ $$
 ### GWAS in the real world  
 
 - We can write the GWAS equation for $$i^{th} $$ SNP on the $$ j^{th} $$ individual 
-$$ y_j = /beta_i g_{ij} + /epsilon_j $$
+$$ y_j = \beta_i g_{ij} + /epsilon_j $$
 - In real world we have to consider many other factors, below is the real world translation of above simplified equation 
-$$ y_i = /beta_{sex}S_j + /beta_{age}A_j + /beta_{PC1}PC_{1j} + /beta_{PC2}PC_{2j} + /beta_i g_{ij} + /epsilon_j  $$
-
+$$ y_i = \beta_{sex}S_j + \beta_{age}A_j + \beta_{PC1}PC_{1j} + \beta_{PC2}PC_{2j} + \beta_ig_{ij} + /epsilon_j  $$
+- In the above real world equation we have considered other covariants like sex, age and principal components. 
+- If phenotype under consideration is height, we would like to remove impact that sex and age has on it. 
+- Principal components capture the impact of population structure. 
+- $$\beta_i$$ is the true effect which we would never know 
+- $$\widehat {\beta_i} is the estimated effect 
 
