@@ -144,5 +144,6 @@ $$ y_i = \beta_{sex}S_j + \beta_{age}A_j + \beta_{PC1}PC_{1j} + \beta_{PC2}PC_{2
 
 
 
+[1] created while following https://www.youtube.com/playlist?list=PLvdBkUzU6hPIkloQgFoSRqcC_SlsXvUOP 
 
  
