@@ -4,7 +4,7 @@ description: "Blog site with support for Latex!!!"
 url: "https://webhash.github.io/"
 author:
   name: "webhash"
-  url: "https://pranjaldhole.github.io"
+  url: "https://webhash.github.io/"
 
 # Build settings
 baseurl: /
@@ -24,12 +24,12 @@ defaults:
       layout: "post"
 
 # Custom variables
-genre: "Latex based blog" # Blog genre
+genre: "Notes" # Blog genre
 version: "0.0.1"    # Blog site version
 
 # Disqus comments
 comments: true      # used to enable disqus comments on site
-dsq_shortname: science-blog-template # disqus shortname
+dsq_shortname: simple notes # disqus shortname
 
 # Options: Define which header/footer to use
 custom_header: false
