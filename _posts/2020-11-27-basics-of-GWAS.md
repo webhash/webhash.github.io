@@ -31,7 +31,7 @@ Things that are inside of us and might not be visible but are determined by the 
 
 ### Case-Control studies 
 
-- We gather subjects and devide them in two different groups
+- We gather subjects and divide them in two different groups
 
 - Case group has individuals who are impacted say by diabetes 
 
@@ -46,7 +46,7 @@ Things that are inside of us and might not be visible but are determined by the 
 
 ### Continous Phenotype or Trait
 
-- Say ,for example, height related information is quite prevelant and we have lot of data and genetic data for individuals
+- For example height related information is quite prevelant and we have lot of data and genetic data for individuals
 
 - Then we can map the Height vs SNPs, like a particular variation in allele, plot 
 
@@ -137,9 +137,12 @@ $$ y_i = \beta_{sex}S_j + \beta_{age}A_j + \beta_{PC1}PC_{1j} + \beta_{PC2}PC_{2
 
 - So we call these groups genome locus or association locus, representing a group of variant that together have impact on phenotype. And the top of the peak is called top GWAS head or top head. 
 
+- We might intutively think that the GWAS head would be the main variation, but that might not be the case.
+
+- We do further analysis to determine the real varition among the GWAS locus.  
 
 
-- 
+
 
 
  
