@@ -7,7 +7,7 @@ author:
   url: "https://webhash.github.io/"
 
 # Build settings
-baseurl: /
+baseurl: https://webhash.github.io/
 source: .
 destination: ./_site
 permalink: /:title
