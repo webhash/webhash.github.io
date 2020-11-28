@@ -3,7 +3,7 @@ title: Understaning GWAS
 ---
 
 
-## GWAS 
+### GWAS 
 
 - GWAS means Genome wide association studies 
 - We are trying to find relationship between the phenotype and the genetics 
@@ -66,10 +66,17 @@ $$
 
 $$ 
 \begin{bmatrix} y_{1} \\ y_{2} \\ \dots \\ y_{N} \end{bmatrix} = 
-\begin{bmatrix} g_{1i} \\ g_{2i} \\ g_{3i} \\ \dots \\ g_{Ni}  \end{bmatrix} \beta_i +
+\begin{bmatrix} g_{1i} \\ g_{2i} \\ \dots \\ g_{Ni}  \end{bmatrix} \beta_i +
 \begin{bmatrix} \epsilon_1 \\ \epsilon_2 \\ \dots \\ \epsilon_N \end{bmatrix} $$
 
 - we are trying to find what impact does $$i^{th} $$ variation/SNP in the genome has rather than all the variations.
 
+
+### GWAS in the real world  
+
+- We can write the GWAS equation for $$i^{th} $$ SNP on the $$ j^{th} $$ individual 
+$$ y_j = /beta_i g_{ij} + /epsilon_j $$
+- In real world we have to consider many other factors, below is the real world translation of above simplified equation 
+$$ y_i = /beta_{sex}S_j + /beta_{age}A_j + /beta_{PC1}PC_{1j} + /beta_{PC2}PC_{2j} + /beta_i g_{ij} + /epsilon_j  $$
 
 
