@@ -1,1 +1,2 @@
-# A simple blog with latex support  
+# A simple blog to keep notes 
+## supports latex and highlighting code 
