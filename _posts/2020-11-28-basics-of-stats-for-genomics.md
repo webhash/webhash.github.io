@@ -1,5 +1,6 @@
 ---
-title: Basics of statistic for genomics  
+title: Basics of statistics for genomics 
+tags: [basics, statistics, genomics]
 ---
 
 ### p-value and null-hypothesis 
@@ -22,7 +23,7 @@ title: Basics of statistic for genomics
 
 - But remember p-value doesn't say anything about the alternate hypothesis, it only talks about validity of null hypothesis. 
 
-***Null Distribution ***
+**Null Distribution**
 
 - Assumed distribution would rarely match exactly with the emperical distribution
 
@@ -34,7 +35,7 @@ title: Basics of statistic for genomics
 
 - $$ Y = X \beta $$ , where Y represent the phenotype and X represent the bunch of genetics, and $$ \beta $$ represent affect size. $$ \beta $$ will follow normal distribution 
 
-***Alternate Hypothesis ***
+**Alternate Hypothesis**
 
 - ![Normal Distribution and P-Values](https://webhash.github.io/img/ndist_pvalue.png "Normal Distribution and P-values")
 
