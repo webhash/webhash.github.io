@@ -1,14 +1,13 @@
 # Site settings
-title: Science and Technology Blog
-description: "Blog site for scientific/technical pages."
-url: "https://pranjaldhole.github.io/science-blog-template"
+title: Notes from the underground !!!
+description: "Blog site with support for Latex!!!"
+url: "https://webhash.github.io/"
 author:
-  name: "Pranjal Dhole"
-  email: "dhole.pranjal@gmail.com"
+  name: "webhash"
   url: "https://pranjaldhole.github.io"
 
 # Build settings
-baseurl: /science-blog-template/
+baseurl: /
 source: .
 destination: ./_site
 permalink: /:title
@@ -25,8 +24,8 @@ defaults:
       layout: "post"
 
 # Custom variables
-genre: "Science and Technology Blog" # Blog genre
-version: "1.0.1"    # Blog site version
+genre: "Latex based blog" # Blog genre
+version: "0.0.1"    # Blog site version
 
 # Disqus comments
 comments: true      # used to enable disqus comments on site
