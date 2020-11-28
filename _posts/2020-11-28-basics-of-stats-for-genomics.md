@@ -5,7 +5,7 @@ title: Basics of statistic for genomics
 ### p-value and null-hypothesis 
 
 
-P-value = P($$ S^n $$ more extreme than $$ S^0 $$ | null-distribution)
+P-value = P($$ S^n $$ more extreme than $$ S^0 | $$ null-distribution)
 
 $$ S^0 $$ : evaluated for how extereme it is 
 
