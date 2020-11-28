@@ -6,6 +6,7 @@ title: Understaning GWAS
 ### GWAS 
 
 - GWAS means Genome wide association studies 
+
 - We are trying to find relationship between the phenotype and the genetics 
 
 ### Exophenotypes
@@ -30,20 +31,29 @@ Things that are inside of us and might not be visible but are determined by the 
 
 ### Case-Control studies 
 
-- We gather subjects and devide them in two different groups 
+- We gather subjects and devide them in two different groups
+
 - Case group has individuals who are impacted say by diabetes 
+
 - Control group has individuals who are not impacted by the diabetes 
+
 - Then we compare the genome difference between two group
-- We might find a variation in genome that seems to be more prevelant in case group than control group 
+
+- We might find a variation in genome that seems to be more prevelant in case group than control group
+
 - If so then we shall have found a region in genome that in itself contribute to phenotype or atleast plays some role 
 
 
 ### Continous Phenotype or Trait
 
-- Say ,for example, height related information is quite prevelant and we have lot of data and genetic data for individuals 
+- Say ,for example, height related information is quite prevelant and we have lot of data and genetic data for individuals
+
 - Then we can map the Height vs SNPs, like a particular variation in allele, plot 
+
 - We might find that people who have less copy of particular SNP in their genome are shorter than people who have more copies 
+
 - So basically GWAS is trying to find relationship between the genome variation and the pheonotype 
+
 - Linear regression model is used to determines these relationship 
 
 ### GWAS Model 
@@ -62,6 +72,7 @@ g_{N1} & g_{N2} & g_{N3} & \dots & g_{NM} \end{bmatrix}
 $$
 
 - But it is hard to determine in one go use all the variation G and determine the $$ \beta $$, in statistic we say would say we dont have enough power to fit this model
+
 - So what we do in GWAS is we try to fit a marginal model i.e. $$ Y = G_i\beta_i + \epsilon $$
 
 $$ 
@@ -75,12 +86,20 @@ $$
 ### GWAS in the real world  
 
 - We can write the GWAS equation for $$i^{th} $$ SNP on the $$ j^{th} $$ individual 
+
 $$ y_j = \beta_i g_{ij} + /epsilon_j $$
+
 - In real world we have to consider many other factors, below is the real world translation of above simplified equation 
+
 $$ y_i = \beta_{sex}S_j + \beta_{age}A_j + \beta_{PC1}PC_{1j} + \beta_{PC2}PC_{2j} + \beta_ig_{ij} + /epsilon_j  $$
+
 - In the above real world equation we have considered other covariants like sex, age and principal components. 
+
 - If phenotype under consideration is height, we would like to remove impact that sex and age has on it. 
+
 - Principal components capture the impact of population structure. 
+
 - $$\beta_i$$ is the true effect which we would never know 
-- $$\widehat {\beta_i} is the estimated effect 
+
+- $$ \widehat {\beta_i} $$ is the estimated effect 
 
