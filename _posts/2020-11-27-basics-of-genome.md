@@ -1,5 +1,5 @@
 ---
-title: Understaning Genome 
+title: Understanding Genome 
 tags: [basics, Genome]
 ---
 
