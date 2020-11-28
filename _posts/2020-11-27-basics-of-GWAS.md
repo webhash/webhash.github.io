@@ -50,7 +50,17 @@ Things that are inside of us and might not be visible but are determined by the 
 
 - In a full model of linear regression model we have $$ Y = G\beta + \epsilon $$, where G represent all the genetic variation seen and we want to calculate the $$ \beta $$ 
 
-- $$ \begin{bmatrix} a_{11} & a_{12} & a_{13} & \dots & a_{1n} \\ a_{21} & a_{22} & a_{23} & \dots & a_{2n} \\ \dots  & \dots  & \dots  & \dots & \dots  \\ a_{n1} & a_{n2} & a_{n3} & \dots & a_{nn} \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ \dots \\ x_n  \end{bmatrix} = \begin{bmatrix} a_{1,n+1} \\ a_{2,n+1} \\ \dots \\ a_{n,n+1} \end{bmatrix} $$
+$$ 
+\begin{bmatrix} y_{1} \\ y_{2} \\ \dots \\ y_{N} \end{bmatrix} = 
+\begin{bmatrix} g_{11} & g_{12} & g_{13} & \dots & g_{1M} \\ 
+g_{21} & g_{22} & g_{23} & \dots & g_{2M} \\ 
+\dots  & \dots  & \dots  & \dots & \dots  \\ 
+g_{N1} & g_{N2} & g_{N3} & \dots & g_{NM} \end{bmatrix} 
+\begin{bmatrix} \beta_1 \\ \beta_2 \\ \dots \\ \beta_N  \end{bmatrix}
++
+\begin{bmatrix} \epsilon_1 \\ \epsilon_2 \\ \dots \\ \epsilon_N \end{bmatrix} 
+$$
+
 - But it is hard to determine in one go use all the variation G and determine the $$ \beta $$, in statistic we say would say we dont have enough power to fit this model
 - So what we do in GWAS is we try to fit a marginal model i.e. $$ Y = G_i\beta_i + e $$
 - we are trying to find what impact does $$i^{th} $$ variation/SNP in the genome has
