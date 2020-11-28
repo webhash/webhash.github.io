@@ -98,3 +98,7 @@ title: Understaning Genome
 - One way to convert unphased data to phased data is by use of family data, i.e by sequening the parents of the subject.
 
 - Easy way is to use computers and apply algorithms to detect the correct phase 
+
+
+###### created while following https://www.youtube.com/playlist?list=PLvdBkUzU6hPKtIGqdkcX8qgN1U8nH21j9
+###### All material references from above 
