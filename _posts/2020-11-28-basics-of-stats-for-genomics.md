@@ -41,3 +41,5 @@ title: Basics of statistic for genomics
 - $$ Y = X_{42} \beta_{42} $$ , where $$ X_{42} $$ is an alternate allele or SNP42, $$ \beta_{42} $$ is the effect of alternate allele at SNP42 
 
 
+
+[1] created while following https://www.youtube.com/playlist?list=PLvdBkUzU6hPL1oZnsVW4hURGiIjfOLqzq
