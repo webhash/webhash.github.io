@@ -5,13 +5,13 @@ title: Basics of statistic for genomics
 ### p-value and null-hypothesis 
 
 
-P-value = P(##S^n## more extreme than ##S^0## | null-distribution)
+P-value = P($$ S^n $$ more extreme than $$ S^0 $$ | null-distribution)
 
-##S^0## : evaluated for how extereme it is 
+$$ S^0 $$ : evaluated for how extereme it is 
 
-##S^n## : random variable generated from the null distribution 
+$$ S^n $$ : random variable generated from the null distribution 
 
-Null Distribution : The distribution of observed or expected ##S^n## given that the null hypothesis is true. 
+Null Distribution : The distribution of observed or expected $$ S^n $$ given that the null hypothesis is true. 
 
 
 - The p-value is the probability of observing your test statistic or a statistic more extreme than it given that it was drawn from the null distribution.
