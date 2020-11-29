@@ -1,5 +1,5 @@
 ---
-title : Basics of ComputeCanada 
+title : Basics of Compute Canada 
 tags : [computecanada, slurm, scheduling]
 ---
 
@@ -117,7 +117,7 @@ srun ./mpi_program
 
   ![basic scheduling](https://webhash.github.io/img/sscd/1.png "basic scheduling")
 
-- Say we have list of task to execute, we shall allocate the slots as soon as we have sufficient resources 
+- Say we have list of 5 jobs to execute, we shall allocate the slots as soon as we have sufficient resources 
 
   ![run first and second job](https://webhash.github.io/img/sscd/2.png "run first and second job")
   
@@ -137,3 +137,4 @@ srun ./mpi_program
   
  - If we look at the job billing , even when fourth job didn't consume all the cores, we will bill it for 9 cores and it blocked the system by consuming all of its memory
  
+  ![job billing](https://webhash.github.io/img/sscd/6.png "job billing")
