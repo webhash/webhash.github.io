@@ -10,7 +10,7 @@ author:
 baseurl: https://webhash.github.io/
 source: .
 destination: ./_site
-permalink: /:title/
+permalink: :title/
 paginate: 8
 paginate_path: /page:num/
 
