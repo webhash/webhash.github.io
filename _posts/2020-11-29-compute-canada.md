@@ -23,21 +23,23 @@ tags : [computecanada, slurm, scheduling]
 
 - SLURM provides [sbatch](https://slurm.schedmd.com/sbatch.html sbatch) command to allow user to submit a job 
 
-- User creates a batch file that contains not only the task to run but also the resources required 
+- User creates a batch file that contains not only the task to run but also the resources required
+
+- Below is the example of a simple job 
 
 {% highlight batch linenos %}
 #!/bin/bash
 # inform the os that we shall be using bash 
 #SBATCH --account=def-somegroup  
-# group to which requested resources shall be accounted
+# group to which resources shall be accounted
 #SBATCH --time=2 
-# time in minutes for which we need to run our job
+# time in minutes for the job 
 #SBATCH --mem=256 
 # memory in MB
 #SBATCH --cpus-per-task=1 
 # number of cores requested
 #SBATCH --output=output_name.out 
-# the name of the output file for the job sumitted 
+# the name of the output file 
 #SBATCH --job-name=some-name 
 # name for the job 
 
@@ -53,3 +55,16 @@ export SLURM_ACCOUNT=def-someuser
 export SBATCH_ACCOUNT=$SLURM_ACCOUNT
 export SALLOC_ACCOUNT=$SLURM_ACCOUNT
 {% endhighlight %}
+
+- we can also create an array job, that shall automatically request multiple jobs
+
+- below is an example of array job submit request for 10 jobs, each shall have a unique job id
+
+{% highlight batch linenos %}
+#!/bin/bash
+#SBATCH --account=def-someuser
+#SBATCH --time=0-0:5
+#SBATCH --array=1-10
+./application_some $SLURM_ARRAY_TASK_ID
+{% endhighlight %}
+
