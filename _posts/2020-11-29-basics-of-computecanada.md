@@ -3,7 +3,7 @@ title : Basics of ComputeCanada
 tags : [computecanada, slurm, scheduling]
 ---
 
-### Compute Canada 
+### Basics of Compute Canada 
 
 - Has multiple server clusters through out canada and is built for researchers and universities to do their research work 
 
@@ -20,6 +20,8 @@ tags : [computecanada, slurm, scheduling]
 - As a user we need to specify to scheduler how much resources like memory, cpus, etc is required by our job 
 
 - Scheduler decides on the basis of information provided by the user when it can schedule the requested job
+
+## SLURM Jobs 
 
 - SLURM provides [sbatch](https://slurm.schedmd.com/sbatch.html sbatch) command to allow user to submit a job 
 
@@ -101,8 +103,12 @@ srun ./mpi_program
 - We can also use the **interactive jobs** via [salloc](https://slurm.schedmd.com/salloc.html salloc)
 
 - It can be particularly beneficial for
-  - Data exploration at the command line
-  - Interactive "console tools" like R and iPython
-  - Significant software development, debugging, or compiling
+  + Data exploration at the command line
+  + Interactive "console tools" like R and iPython
+  + Significant software development, debugging, or compiling
+
+## Job Scheduling policies 
+
+
 
 
