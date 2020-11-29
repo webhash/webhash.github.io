@@ -98,7 +98,11 @@ srun ./mpi_program
 
 - Large MPI jobs should use ```--nodes``` and ```--ntasks-per-node``` instead of ```--ntasks```
 
+- We can also use the **interactive jobs** via [salloc](https://slurm.schedmd.com/salloc.html salloc)
 
-
+- It can be particularly beneficial for
+  - Data exploration at the command line
+  - Interactive "console tools" like R and iPython
+  - Significant software development, debugging, or compiling
 
 
