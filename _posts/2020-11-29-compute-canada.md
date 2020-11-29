@@ -28,22 +28,16 @@ tags : [computecanada, slurm, scheduling]
 {% highlight batch linenos %}
 #!/bin/bash
 #inform the os that we shall be using bash 
-
 #SBATCH --account=def-somegroup  
 #group to which out resources shall be accounted to 
-
 #SBATCH --time=2 
 #time in minutes for which we need to run our job
-
 #SBATCH --mem=256 
 #memory in MB
-
 #SBATCH --cpus-per-task=1 
 #number of cores requested
-
 #SBATCH --output=output_name.out 
 #the name of the output file for the job sumitted 
-
 #SBATCH --job-name=some-name 
 #name for the job 
 
@@ -52,4 +46,10 @@ sleep 60
 
 {% endhighlight %}
 
+- we can use ```~/.bashrc``` file to hardcode the group information 
 
+{% highlight batch linenos %}
+export SLURM_ACCOUNT=def-someuser
+export SBATCH_ACCOUNT=$SLURM_ACCOUNT
+export SALLOC_ACCOUNT=$SLURM_ACCOUNT
+{% endhighlight %}
