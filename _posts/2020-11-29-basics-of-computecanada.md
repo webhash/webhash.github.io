@@ -5,11 +5,11 @@ tags : [computecanada, slurm, scheduling]
 
 ### Basics of Compute Canada 
 
-- Has multiple clusters throughout canada and is built for researchers and universities to do their research work 
+- Has multiple clusters throughout Canada and is built for researchers and universities to do their research work 
 
 - We login using SSH and lands on a login node
 
-- Computer canada uses SLURM scheduling system 
+- Computer Canada uses SLURM scheduling system 
 
 - We should always use the scheduler to submit jobs 
 

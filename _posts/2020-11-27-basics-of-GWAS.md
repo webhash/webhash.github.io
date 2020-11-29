@@ -12,7 +12,7 @@ tags : [GWAS, genomics, basics]
 
 ### Exophenotypes
 
-In easy words it is basically outward apperance of a being like 
+In easy words it is basically outward appearance of a being like 
 - Height
 - BMI
 - Hair color  
@@ -24,7 +24,7 @@ In easy words it is basically outward apperance of a being like
 Things that are inside of us and might not be visible but are determined by the genetics like
 
 - Blood sugar Level 
-- RELN protien level 
+- RELN protein level 
 - Diabetes
 - Addiction 
 - Cystic fibrosis
@@ -40,20 +40,20 @@ Things that are inside of us and might not be visible but are determined by the 
 
 - Then we compare the genome difference between two group
 
-- We might find a variation in genome that seems to be more prevelant in case group than control group
+- We might find a variation in genome that seems to be more prevalent in case group than control group
 
-- If so then we shall have found a region in genome that in itself contribute to phenotype or atleast plays some role 
+- If so then we shall have found a region in genome that in itself contribute to phenotype or at-least plays some role 
 
 
 ### Continous Phenotype or Trait
 
-- For example height related information is quite prevelant and we have lot of data and genetic data for individuals
+- For example height related information is quite prevalent and we have lot of data and genetic data for individuals
 
 - Then we can map the Height vs SNPs, like a particular variation in allele, plot 
 
 - We might find that people who have less copy of particular SNP in their genome are shorter than people who have more copies 
 
-- So basically GWAS is trying to find relationship between the genome variation and the pheonotype 
+- So basically GWAS is trying to find relationship between the genome variation and the phenotype 
 
 - Linear regression model is used to determines these relationship 
 
@@ -126,7 +126,7 @@ $$ y_i = \beta_{sex}S_j + \beta_{age}A_j + \beta_{PC1}PC_{1j} + \beta_{PC2}PC_{2
 
 ![Manhattan](https://webhash.github.io/img/Manhattan_Plot.png "Manhattan Plot")
 
-- We dont consider the p-value of 0.05 because we can have high family-wise error rate, i.e. the probability of having one or more false discovery 
+- We don't consider the p-value of 0.05 because we can have high family-wise error rate, i.e. the probability of having one or more false discovery 
 
 - Thus we use p-value of 5 X $$10^{-8}$$ which translates to 7.3 through negative log scale 
 
@@ -138,9 +138,9 @@ $$ y_i = \beta_{sex}S_j + \beta_{age}A_j + \beta_{PC1}PC_{1j} + \beta_{PC2}PC_{2
 
 - So we call these groups genome locus or association locus, representing a group of variant that together have impact on phenotype. And the top of the peak is called top GWAS head or top head. 
 
-- We might intutively think that the GWAS head would be the main variation, but that might not be the case.
+- We might intuitively think that the GWAS head would be the main variation, but that might not be the case.
 
-- We do further analysis to determine the real varition among the GWAS locus.  
+- We do further analysis to determine the real variation among the GWAS locus.  
 
 
 

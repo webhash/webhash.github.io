@@ -20,22 +20,22 @@ tags: [basics, Genome]
 
 - Together A-T and C-G are called basepairs
 
-- So if we know nucleobases arrangement of one strand, we can tell its counterpart strand's arrangement
+- So if we know Nucleobases arrangement of one strand, we can tell its counterpart strand's arrangement
 
-- Human DNA is approximatly 3 billion basepair long
+- Human DNA is approximately 3 billion basepair long
 
 - DNA is not one long strand, but contains chunks of 23 chromosomes
 
 - Chromosomes in humans can be divided into two types: autosomes (body chromosome) and allosome (sex chromosome).
 
-- 22 of the choromosomes are of autosomes type and 23rd one is allosome.  
+- 22 of the chromosomes are of autosomes type and 23rd one is allosome.  
 
 - Some chromosomes are big, some are small. 
 
 
 ## Human genetics 
 
-- Humans carry two copy of DNA, we belong to the diploid cataegory 
+- Humans carry two copy of DNA, we belong to the diploid category 
 
 - Once copy from each parent 
 
@@ -58,20 +58,20 @@ tags: [basics, Genome]
 
 - Indel is an insertion or deletion of bases in the genome of an organism
 
-- Structrual variation is group name of various complex differences in genome
+- Structural variation is group name of various complex differences in genome
 
-- We often use different terms for same/similiar concepts in genetics. 
+- We often use different terms for same/similar concepts in genetics. 
 
 - Variant is catch all word for any difference in genome. 
 
-- Mutation is used for things that are rarely seen or when first time a change is seen, change itself can either be SNP, Indel or Structrual  
+- Mutation is used for things that are rarely seen or when first time a change is seen, change itself can either be SNP, Indel or Structural  
 
 - Allele is the specific variation that we see, it doesn't concern with the location of the change but the change itself. 
 
 
 ## Genotyping and Sequencing 
 
- - We have two approaches to get the inforation about the variations 
+ - We have two approaches to get the information about the variations 
  
  **Genotyping**
  
@@ -83,7 +83,7 @@ tags: [basics, Genome]
  
  **Sequencing**
  
- - Costier when compaterd to genotyping, but it is also getting cheaper 
+ - Costlier when compared to genotyping, but it is also getting cheaper 
  
  - Reads entire genome , or portion of genome and thus finds the knowns and unknowns 
 
@@ -96,7 +96,7 @@ tags: [basics, Genome]
 
 - When we know to which haplotype does values in pair belongs to, we can say that result is phased and represented by ```C|C```, i.e by vertical bar
 
-- One way to convert unphased data to phased data is by use of family data, i.e by sequening the parents of the subject.
+- One way to convert unphased data to phased data is by use of family data, i.e by sequencing the parents of the subject.
 
 - Easy way is to use computers and apply algorithms to detect the correct phase 
 

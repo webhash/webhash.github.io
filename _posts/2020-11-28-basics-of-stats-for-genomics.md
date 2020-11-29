@@ -17,7 +17,7 @@ tags: [basics, statistics, genomics]
 
 - The P-value is the probability of observing your test statistic or a statistic more extreme than it given that it was drawn from the null distribution.
 
-- P-value caluclation based on the the random sample used. The more people we sample the more accurate will be our p-value. 
+- P-value calculation based on the the random sample used. The more people we sample the more accurate will be our p-value. 
 
 - A very small p-value means that such an extreme observed outcome would be very unlikely under the null hypothesis.
 
@@ -25,7 +25,7 @@ tags: [basics, statistics, genomics]
 
 **Null Distribution**
 
-- Assumed distribution would rarely match exactly with the emperical distribution
+- Assumed distribution would rarely match exactly with the empirical distribution
 
 - Normal distribution is the most used Null distribution
 
@@ -51,7 +51,7 @@ tags: [basics, statistics, genomics]
 
 **Significance Threshold**
 
-- If the significance threashold for rejecting the null hypothesis is 0.05, it means we have 1/20 chance that we reject the null hypothesis incorrectly, on each test that we do. 
+- If the significance threshold for rejecting the null hypothesis is 0.05, it means we have 1/20 chance that we reject the null hypothesis incorrectly, on each test that we do. 
 
 - So if we do 100 test , all of which are truly under null , we can expect 5 false positives 
 
