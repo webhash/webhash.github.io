@@ -5,7 +5,7 @@ tags : [computecanada, slurm, scheduling]
 
 ### Basics of Compute Canada 
 
-- Has multiple server clusters through out canada and is built for researchers and universities to do their research work 
+- Has multiple clusters throughout canada and is built for researchers and universities to do their research work 
 
 - We login using SSH and lands on a login node
 
@@ -23,7 +23,7 @@ tags : [computecanada, slurm, scheduling]
 
 ## SLURM Jobs 
 
-- SLURM provides [sbatch](https://slurm.schedmd.com/sbatch.html sbatch) command to allow user to submit a job 
+- SLURM provides [sbatch](https://slurm.schedmd.com/sbatch.html "sbatch") command to allow user to submit a job 
 
 - User creates a batch file that contains not only the task to run but also the resources required
 
@@ -100,7 +100,7 @@ srun ./mpi_program
 
 - Large MPI jobs should use ```--nodes``` and ```--ntasks-per-node``` instead of ```--ntasks```
 
-- We can also use the **interactive jobs** via [salloc](https://slurm.schedmd.com/salloc.html salloc)
+- We can also use the **interactive jobs** via [salloc](https://slurm.schedmd.com/salloc.html "salloc")
 
 - It can be particularly beneficial for
   + Data exploration at the command line
@@ -109,6 +109,31 @@ srun ./mpi_program
 
 ## Job Scheduling policies 
 
+- Scheduling policy is based on different types of resources like cores, memory, time ... 
 
+- lets play around with a sample scenario
 
+- Below is the how we can interpret the scheduling 
 
+  [basic scheduling](https://webhash.github.io/img/sscd/1.png "basic scheduling")
+
+- Say we have list of task to execute, we shall allocate the slots as soon as we have sufficient resources 
+
+  [run first and second job](https://webhash.github.io/img/sscd/2.png "run first and second job")
+  
+- No more memory is left for the third task, thus we wait for the job 1 to get over
+
+- After job 1 is completed we can schedule the third job, which is MPI job thus it can take cores from other nodes. 
+
+  [run third job](https://webhash.github.io/img/sscd/3.png "run third job")
+  
+- Once job 2 is over we can schedule the next job as system has enough memory to do the scheduling 
+
+  [run fourth job](https://webhash.github.io/img/sscd/4.png "run fourth job")
+
+- And finally we can execute the last job 
+
+  [run fifth job](https://webhash.github.io/img/sscd/5.png "run fifth job")
+  
+ - If we look at the job billing , even when fourth job didn't consume all the cores, we will bill it for 9 cores and it blocked the system by consuming all of its memory
+ 
