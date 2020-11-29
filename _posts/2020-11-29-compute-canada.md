@@ -27,19 +27,19 @@ tags : [computecanada, slurm, scheduling]
 
 {% highlight batch linenos %}
 #!/bin/bash
-#inform the os that we shall be using bash 
+# inform the os that we shall be using bash 
 #SBATCH --account=def-somegroup  
-#group to which out resources shall be accounted to 
+# group to which requested resources shall be accounted
 #SBATCH --time=2 
-#time in minutes for which we need to run our job
+# time in minutes for which we need to run our job
 #SBATCH --mem=256 
-#memory in MB
+# memory in MB
 #SBATCH --cpus-per-task=1 
-#number of cores requested
+# number of cores requested
 #SBATCH --output=output_name.out 
-#the name of the output file for the job sumitted 
+# the name of the output file for the job sumitted 
 #SBATCH --job-name=some-name 
-#name for the job 
+# name for the job 
 
 echo 'Hello World'
 sleep 60
