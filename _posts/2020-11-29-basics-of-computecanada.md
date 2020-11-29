@@ -138,3 +138,7 @@ srun ./mpi_program
  - If we look at the job billing , even when fourth job didn't consume all the cores, we will bill it for 9 cores and it blocked the system by consuming all of its memory
  
   ![job billing](https://webhash.github.io/img/sscd/6.png "job billing")
+
+- Many a times we have sequences of steps in our job and some of the steps can consume a lot for memory, for such scenarios we can use job dependency approach 
+
+  ![job dependency](https://webhash.github.io/img/sscd/7.png "job dependency")
