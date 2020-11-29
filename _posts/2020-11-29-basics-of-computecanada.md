@@ -145,7 +145,7 @@ srun ./mpi_program
   
  - As we said the scenario was a sample one, because in reality, when job is submitted to the schedular queue it gets reordered based on the priority
  
- - **Factors that can impact the priority of a job **
+ - **Factors that can impact the priority of a job**
    + Size : based on the resources requested 
    + Age : determined by the time spend in the queue 
    + Fair share : accounts's past usage affects the priority 
