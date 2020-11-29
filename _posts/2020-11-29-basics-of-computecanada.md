@@ -1,5 +1,5 @@
 ---
-title : Basics of Compute Canada 
+title : Basics of ComputeCanada 
 tags : [computecanada, slurm, scheduling]
 ---
 
