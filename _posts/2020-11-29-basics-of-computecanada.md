@@ -111,7 +111,7 @@ srun ./mpi_program
 
 - Scheduling policy is based on different types of resources like cores, memory, time ... 
 
-- Lets play around with a sample scenario
+- Lets play around with a **sample scenario** where we follow FIFO approach
 
 - Below is the how we can interpret the scheduling 
 
@@ -142,3 +142,16 @@ srun ./mpi_program
 - Many a times we have sequences of steps in our job and some of the steps can consume a lot for memory, for such scenarios we can use job dependency approach 
 
   ![job dependency](https://webhash.github.io/img/sscd/7.png "job dependency")
+  
+ - As we said the scenario was a sample one, because in reality, when job is submitted to the schedular queue it gets reordered based on the priority
+ 
+ - **Factors that can impact the priority of a job **
+   + Size : based on the resources requested 
+   + Age : determined by the time spend in the queue 
+   + Fair share : accounts's past usage affects the priority 
+   + Partition : the classification node also affetcs the priority 
+   
+
+
+[1] created while following https://youtu.be/G0QANByJ9rY 
+ 
