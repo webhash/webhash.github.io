@@ -111,29 +111,29 @@ srun ./mpi_program
 
 - Scheduling policy is based on different types of resources like cores, memory, time ... 
 
-- lets play around with a sample scenario
+- Lets play around with a sample scenario
 
 - Below is the how we can interpret the scheduling 
 
-  [basic scheduling](https://webhash.github.io/img/sscd/1.png "basic scheduling")
+  ![basic scheduling](https://webhash.github.io/img/sscd/1.png "basic scheduling")
 
 - Say we have list of task to execute, we shall allocate the slots as soon as we have sufficient resources 
 
-  [run first and second job](https://webhash.github.io/img/sscd/2.png "run first and second job")
+  ![run first and second job](https://webhash.github.io/img/sscd/2.png "run first and second job")
   
 - No more memory is left for the third task, thus we wait for the job 1 to get over
 
 - After job 1 is completed we can schedule the third job, which is MPI job thus it can take cores from other nodes. 
 
-  [run third job](https://webhash.github.io/img/sscd/3.png "run third job")
+  ![run third job](https://webhash.github.io/img/sscd/3.png "run third job")
   
 - Once job 2 is over we can schedule the next job as system has enough memory to do the scheduling 
 
-  [run fourth job](https://webhash.github.io/img/sscd/4.png "run fourth job")
+  ![run fourth job](https://webhash.github.io/img/sscd/4.png "run fourth job")
 
 - And finally we can execute the last job 
 
-  [run fifth job](https://webhash.github.io/img/sscd/5.png "run fifth job")
+  ![run fifth job](https://webhash.github.io/img/sscd/5.png "run fifth job")
   
  - If we look at the job billing , even when fourth job didn't consume all the cores, we will bill it for 9 cores and it blocked the system by consuming all of its memory
  
