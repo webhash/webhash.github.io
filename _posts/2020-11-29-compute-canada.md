@@ -25,7 +25,7 @@ tags : [computecanada, slurm, scheduling]
 
 - User creates a batch file that contains not only the task to run but also the resources required
 
-- Below is the example of a simple job 
+- Below is the example of a **simple job** 
 
 {% highlight batch linenos %}
 #!/bin/bash
@@ -36,8 +36,8 @@ tags : [computecanada, slurm, scheduling]
 # time in minutes for the job 
 #SBATCH --mem=256 
 # memory in MB
-#SBATCH --cpus-per-task=1 
-# number of cores requested
+#SBATCH -c 1 
+# number of cpus requested
 #SBATCH --output=output_name.out 
 # the name of the output file 
 #SBATCH --job-name=some-name 
@@ -48,7 +48,7 @@ sleep 60
 
 {% endhighlight %}
 
-- we can use ```~/.bashrc``` file to hardcode the group information 
+- We can use ```~/.bashrc``` file to hardcode the group information 
 
 {% highlight batch linenos %}
 export SLURM_ACCOUNT=def-someuser
@@ -56,9 +56,9 @@ export SBATCH_ACCOUNT=$SLURM_ACCOUNT
 export SALLOC_ACCOUNT=$SLURM_ACCOUNT
 {% endhighlight %}
 
-- we can also create an array job, that shall automatically request multiple jobs
+- We can also create an **array job**, that shall automatically request multiple jobs
 
-- below is an example of array job submit request for 10 jobs, each shall have a unique job id
+- Below is an example of array job submit request for 10 jobs, each shall have a unique job id
 
 {% highlight batch linenos %}
 #!/bin/bash
@@ -67,4 +67,38 @@ export SALLOC_ACCOUNT=$SLURM_ACCOUNT
 #SBATCH --array=1-10
 ./application_some $SLURM_ARRAY_TASK_ID
 {% endhighlight %}
+
+- We can also submit an **OpenMP job**, Bear in mind that for an application to use OpenMP it must be compiled with the appropriate flag. 
+
+- Below is an example of OpenMp job request 
+
+{% highlight batch linenos %}
+#!/bin/bash
+#SBATCH --account=def-someuser
+#SBATCH --time=0-0:5
+#SBATCH --cpus-per-task=8
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+./ompHello
+{% endhighlight %}
+
+- We can also submit a **MPI job**, below is an example of same 
+
+{% highlight batch linenos %}
+#!/bin/bash
+#SBATCH --account=def-someuser
+#SBATCH --ntasks=4               
+# number of MPI processes
+#SBATCH --mem-per-cpu=1024M
+# memory; default unit is megabytes
+#SBATCH --time=0-00:05
+# time (DD-HH:MM)
+srun ./mpi_program
+# mpirun or mpiexec also work
+{% endhighlight %}
+
+- Large MPI jobs should use ```--nodes``` and ```--ntasks-per-node``` instead of ```--ntasks```
+
+
+
+
 
