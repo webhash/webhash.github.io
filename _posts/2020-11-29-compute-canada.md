@@ -21,21 +21,34 @@ tags : [computecanada, slurm, scheduling]
 
 - Scheduler decides on the basis of information provided by the user when it can schedule the requested job
 
-- SLURM provides sbatch command to allow user to submit a job 
+- SLURM provides [sbatch](https://slurm.schedmd.com/sbatch.html sbatch) command to allow user to submit a job 
 
 - User creates a batch file that contains not only the task to run but also the resources required 
 
 {% highlight batch linenos %}
-
 #!/bin/bash
-#SBATCH --account=def-somegroup  # group to which out resources shall be accounted to 
-#SBATCH --time=2 #  time in minutes for which we need to run our job
-#SBATCH --mem=256 # memory in MB
-#SBATCH --cpus-per-task=1 # number of cores requested
-#SBATCH --output=output_name.out # the name of the output file for the job sumitted 
-#SBATCH --job-name=some-name # name for the job 
+#inform the os that we shall be using bash 
+
+#SBATCH --account=def-somegroup  
+#group to which out resources shall be accounted to 
+
+#SBATCH --time=2 
+#time in minutes for which we need to run our job
+
+#SBATCH --mem=256 
+#memory in MB
+
+#SBATCH --cpus-per-task=1 
+#number of cores requested
+
+#SBATCH --output=output_name.out 
+#the name of the output file for the job sumitted 
+
+#SBATCH --job-name=some-name 
+#name for the job 
 
 echo 'Hello World'
+sleep 60
 
 {% endhighlight %}
 
