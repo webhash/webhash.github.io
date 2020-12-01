@@ -70,6 +70,10 @@ export SALLOC_ACCOUNT=$SLURM_ACCOUNT
 ./application_some $SLURM_ARRAY_TASK_ID
 {% endhighlight %}
 
+- we can also pass the array parameter through the command line via ```sbatch --array [1-10] some_script.sh```
+
+- we can also throttle the number of jobs by using ```sbatch --array [1-10]%5 some_script.sh``` , this means that atmost 5 jobs will run at one time 
+
 - We can also submit an **OpenMP job**, Bear in mind that for an application to use OpenMP it must be compiled with the appropriate flag. 
 
 - Below is an example of OpenMp job request 
