@@ -106,7 +106,7 @@ $$ y_i = \beta_{sex}S_j + \beta_{age}A_j + \beta_{PC1}PC_{1j} + \beta_{PC2}PC_{2
 
 ### GWAS, p-value and Manhattan plot 
 
-- We use the Marginal model $$ y_j = \beta_i g_{ij} + /epsilon_j $$ to get the estimated effect $$ \hat {\beta_i} $$ and p-values
+- We use the Marginal model $$ y_j = \beta_i g_{ij} + \epsilon_j $$ to get the estimated effect $$ \hat {\beta_i} $$ and p-values
 
 - We use manhattan plot to plot the p-values and different variants in the different section of genome 
 
