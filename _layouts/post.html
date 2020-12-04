@@ -7,7 +7,11 @@ layout: default
 	<div class="content">
 		{{ content }}
 	</div>
-	<h6>{{page.tags}}</h6>
+	<small>
+	    {% for tag in page.tags %}
+	    <p>{{ tag }}</p>
+	    {% endfor %}
+	</small>
 
 
 </article>
