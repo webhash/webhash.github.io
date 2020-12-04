@@ -9,7 +9,7 @@
     padding: 0.3em 0;
     font-size: 1.5em;
     font-weight: 400;
-    @media (min-width: 940px) {
+    @media (min-width: 1400px) {
       font-size: 1em;
     }
     &:hover {
@@ -113,7 +113,7 @@
 
 #container {
 	margin:0 auto;
-	max-width: 50%;
+	max-width: 80%;
 	padding: 0 1.5rem;
 }
 
@@ -155,7 +155,7 @@
 
 #post-page {
   margin-bottom: 1.5em;
-  @media (min-width: 940px) {
+  @media (min-width: 1400px) {
       margin-bottom: 1.3334em;
     }
 }
@@ -175,7 +175,7 @@
   line-height: 1.5em; /* 24px/16px */
   margin-bottom: 1.5em; /* 24px/16px */
   font-weight: 200;
-  @media (min-width: 940px) {
+  @media (min-width: 1400px) {
     display: block;
     color: lighten($text-color, 25%);
     line-height: 1.3334em; /* 24px/18px */
@@ -208,7 +208,7 @@ code {
 .content ul, .content ol {
   line-height: 1.5em; /* 24px/16px */
   padding-left: 1.5em;
-  @media (min-width: 940px) {
+  @media (min-width: 1400px) {
     line-height: 1.33334em; /* 24px/18px */
   }
 }
