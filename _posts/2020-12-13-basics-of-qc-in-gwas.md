@@ -12,17 +12,17 @@ tags : [GWAS, genomics, basics, QC]
 ### Per-individual quality control
 
 - We can do following per-individual quality control 
- - Identifying individual with discordant sex information 
- - Indentifying individual with outlying missing genotype and/or heterozygosity rates
- - Identifying related individuals
- - Identifying individuals of divergent ancestry
+  - Identifying individual with discordant sex information 
+  - Indentifying individual with outlying missing genotype and/or heterozygosity rates
+  - Identifying related individuals
+  - Identifying individuals of divergent ancestry
  
 ### Per-marker quality control
  
  - We can do following per-marker quality control 
-  - Identifying markers with excessive missing genotype rates 
-  - Identifying markers showing a significant deviation from Hardy-Weinberg equilibrium
-  - Removal of markers with low minor allele frequency (MAF)
+   - Identifying markers with excessive missing genotype rates 
+   - Identifying markers showing a significant deviation from Hardy-Weinberg equilibrium
+   - Removal of markers with low minor allele frequency (MAF)
 
 ### Individuals with discordant sex information
 
