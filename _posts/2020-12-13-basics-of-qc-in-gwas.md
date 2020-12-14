@@ -54,10 +54,20 @@ tags : [GWAS, genomics, basics, QC]
 --- 
 
 ### Markers with excessive missingness rate 
+
 - Markers with excessive missingness rate are removed as they are considered unreliable. 
-- Typically, thresholds for marker exclusion based on missingness range from 1%-5% for MAF
+- Typically, thresholds for marker exclusion based on missingness range from 1%-5%
 
 ### Markers with deviation from HWE 
-- 
+
+- Markers with strong deviation from HWE might be indicative of genotyping or genotype-calling errors.
+- As serious genotyping errors often yield very low p-values, it is recommended to choose a reasonably low threshold to avoid filtering too many variants (that might have slight, non-critical deviations).
+- Can be calculated via the observed and expected heterozygote frequencies per SNP in the individuals that passed the per Individual QC and computes the deviation of the frequencies from Hardy-Weinberg equilibrium (HWE) by HWE exact test
+
+### Markers with low minor allele frequency
+
+- Markers with low minor allele count are often removed as the actual genotype calling is very difficult due to the small sizes of the heterozygote and rare-homozygote clusters. 
+
+---
 
 [1] created while following https://meyer-lab-cshl.github.io/plinkQC/articles/plinkQC.html 
