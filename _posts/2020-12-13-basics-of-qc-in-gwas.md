@@ -24,6 +24,40 @@ tags : [GWAS, genomics, basics, QC]
    - Identifying markers showing a significant deviation from Hardy-Weinberg equilibrium
    - Removal of markers with low minor allele frequency (MAF)
 
+--- 
+
 ### Individuals with discordant sex information
+
+- The identification of individuals with discordant sex information helps to detect sample mix-ups and samples with very poor genotyping rates.
+- For each sample, the homozygosity rates across all X-chromosomal genetic markers are computed and compared with the expected rates (typically $<$0.2 for females and $>$0.8 for males).
+- For samples where the assigned sex (PEDSEX in the .fam file) contradicts the sex inferred from the homozygosity rates (SNPSEX), it should be checked that the sex was correctly recorded (genotyping often occurs at different locations as phenotyping and misrecording might occur). 
+-Samples with discordant sex information that is not accounted for should be removed from the study.
+
+### Individuals with outlying missing genotype and/or heterozygosity rates
+
+- The identification of individuals with outlying missing genotype and/or heterozygosity rates helps to detect samples with poor DNA quality and/or concentration that should be excluded from the study.
+- Typically, individuals with more than 3-7% of their genotype calles missing are removed.
+- Outlying heterozygosity rates are judged relative to the overall heterozygosity rates in the study, and individuals whose rates are more than a few standard deviations (sd) from the mean heterozygosity rate are removed.
+- A typical quality control for outlying heterozygoisty rates would remove individuals who are three sd away from the mean rate.
+
+### Related individuals
+
+- Depending on the future use of the genotypes, it might required to remove any related individuals from the study. 
+- Related individuals can be identified by their proporting of shared alleles at the genotyped markers
+- Standardly, individuals with second-degree relatedness or higher will be excluded. 
+
+### Individuals of divergent ancestry
+
+- The identification of individuals of divergent ancestry can be achieved by combining the genotypes of the study population with genotypes of a reference dataset consisting of individuals from known ethnicities (for instance individuals from the Hapmap or 1000 genomes study)
+- Principal component analysis on this combined genotype panel can be used to detect population structure down to the level of the reference dataset
+
+--- 
+
+### Markers with excessive missingness rate 
+- Markers with excessive missingness rate are removed as they are considered unreliable. 
+- Typically, thresholds for marker exclusion based on missingness range from 1%-5% for MAF
+
+### Markers with deviation from HWE 
+- 
 
 [1] created while following https://meyer-lab-cshl.github.io/plinkQC/articles/plinkQC.html 
